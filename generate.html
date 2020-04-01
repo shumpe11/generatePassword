@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="generate.css">
+  <title>パスワードランダム生成</title>
+</head>
+<body>
+<div id="title">
+  <i class="fas fa-key fa-2x"></i>
+  <h1>Password Generater</h1>
+  <i class="fas fa-key fa-2x"></i>
+</div>
+
+<div id="password-area">
+  <p id="password"></p>
+</div>
+
+<div id="button-wrapper">
+  <button type="button" id="generate" onclick="generatePassword();">パスワードを生成する</button>
+</div>
+
+<p id="option">オプション</p>
+
+<form id="option-area" name="optionarea">
+  <p id="length-paragraph">長さ:
+    <input type="range" id="length" name="length" value="1" min="4" max="12" step="1" oninput="measureLength()">
+    <span id="font-length">4</span>
+  </p>
+  <p>数字(1-9)
+    <input type="checkbox" id="check-number" name="number" checked="checked">
+  </p>
+  <p>小文字(a-z)
+    <input type="checkbox" id="check-small" name="small" checked="checked">
+  </p>
+  <p>大文字(A-Z)
+    <input type="checkbox" id="check-large" name="large" checked="checked">
+  </p>
+  <p>記号(!@#%^&*)
+    <input type="checkbox" id="check-sign" name="sign">
+  </p>
+  <p>先頭と末尾をアルファベットに限定
+   <input type="checkbox" id="limit-alphabet" name="limit" checked>
+  </p>
+
+</form>
+<script type="text/javascript" src="generate.js"></script>
+<script src="https://kit.fontawesome.com/9478a6b84a.js" crossorigin="anonymous"></script>
+</body>
+</html>

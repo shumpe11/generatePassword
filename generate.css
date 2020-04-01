@@ -1,0 +1,81 @@
+body{
+  background-color: #EEEEEE;
+}
+
+h1{
+  display: inline-block;
+}
+
+#title{
+  margin: 0 auto;
+  text-align: center;
+}
+
+#password-area{
+  background-color: white;
+  height:38px;
+  width:330px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px inset;
+}
+
+#password{
+  text-align: center;
+  font-size:28px;
+}
+
+#button-wrapper{
+  text-align: center;
+  margin-top:50px;
+}
+
+#generate{
+  border-radius: 5px;
+  margin: 0 auto;
+  height:38px;
+  width:330px;
+  background-color: #78BBE6;
+  box-shadow: 0px 4px 0px #1B435D;
+  border: 0px;
+}
+
+#generate:active{
+	box-shadow: none;
+  transform: translate(0,2px)
+}
+
+#option-area{
+  border: 2px dotted;
+  width:400px;
+  margin: 0 auto;
+  /* margin-top: 65px; */
+  /* border-top: none; */
+  /* position: absolute;
+  padding: 0 .5em;
+  left: 310px;
+  top: 250px; */
+}
+
+#length-paragraph{
+  /* display: inline-block; */
+  /* margin-top: 10px; */
+  /* font-size: 18px; */
+}
+
+#option{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 65px;
+}
+
+#font-length{
+  text-align: center;
+}
+
+#option-area p input{
+  background-color: white;
+  display: inline-block;
+  /* height:50px; */
+  vertical-align: top;
+}
